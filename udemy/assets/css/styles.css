@@ -1,0 +1,323 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* ======================== */
+
+/* GLOBAL CONFIGURATION */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22vh 10vh 1fr 6vh;
+    grid-template-areas: "cabecalho" "navegacao" "container" "rodape";
+}
+/* ======================== */
+
+/* Estilizado cabecalho */
+.cabecalho{
+    grid-area: cabecalho;
+    color : white;
+    z-index: 1;
+    background-color: #3a2a77;
+    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.75);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho > h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.cabecalho > h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 0.25em;
+}
+/* =================================== */
+
+/* Estilizando container principal */
+.container{
+    grid-area: container;
+    padding: 2em;
+    background-color: #f0f0f0;
+    width: 100vw;
+    height: calc(100vh - 38vh);
+    font-size: 1.2rem;
+}
+
+.container .conteudo{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: white;
+    padding : 1em;
+}
+
+.container .modulos{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: white;
+    padding : 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .modulos .item-modulo{
+    flex-basis: 32%;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+.container .modulos .item-modulo > h3{
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1em;
+    background-color: #3a2a77;
+}
+
+.container .modulos .item-modulo > ul{
+    padding: 0.7em;
+    margin-bottom: 1em;
+    list-style-type: none;
+}
+
+.container .modulos .item-modulo > ul > li{
+    padding: 0.5em;
+    cursor : pointer;
+}
+
+.container .modulos .item-modulo > ul > li:hover{
+    background-color: #eee;
+}
+
+.container .modulos .item-modulo > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.container .modulos .verde{
+    border: 2px solid #4CAF50;
+}
+
+.container .modulos .verde > h3{
+    background-color: #4CAF50;
+}
+
+.container .modulos .verde:hover > h3{
+    background-color: #44a047;
+}
+
+.container .modulos .vermelho{
+    border: 2px solid #F71000;
+}
+
+.container .modulos .vermelho > h3{
+    background-color: #F71000;
+}
+
+.container .modulos .vermelho:hover > h3{
+    background-color: #da1103;
+}
+
+.container .modulos .azul{
+    border: 2px solid #2196f3;
+}
+
+.container .modulos .azul > h3{
+    background-color: #2196f3;
+}
+
+.container .modulos .azul:hover > h3{
+    background-color: #1b83d8;
+}
+
+.container .modulos .roxo{
+    border: 2px solid #9c27b0;
+}
+
+.container .modulos .roxo > h3{
+    background-color: #9c27b0;
+}
+
+.container .modulos .roxo:hover > h3{
+    background-color: #822094;
+}
+
+.container .modulos .laranja{
+    border: 2px solid #FF9800;
+}
+
+.container .modulos .laranja > h3{
+    background-color: #FF9800;
+}
+
+.container .modulos .laranja:hover > h3{
+    background-color: #e68a00;
+}
+
+.container .modulos .rosa{
+    border: 2px solid #fc03df;
+}
+
+.container .modulos .rosa > h3{
+    background-color: #fc03df;
+}
+
+.container .modulos .rosa:hover > h3{
+    background-color: #cf00b7;
+}
+
+.container .modulos .verde-escuro{
+    border: 2px solid #1b5e20;
+}
+
+.container .modulos .verde-escuro > h3{
+    background-color: #1b5e20;
+}
+
+.container .modulos .verde-escuro:hover > h3{
+    background-color: #113b14;
+}
+
+.container .modulos .vermelho-escuro{
+    border: 2px solid #B71c1c;
+}
+
+.container .modulos .vermelho-escuro > h3{
+    background-color: #B71c1c;
+}
+
+.container .modulos .vermelho-escuro:hover > h3{
+    background-color: #a30000;
+}
+
+.container .modulos .azul-escuro{
+    border: 2px solid #0d47a1;
+}
+
+.container .modulos .azul-escuro > h3{
+    background-color: #0d47a1;
+}
+
+.container .modulos .azul-escuro:hover > h3{
+    background-color: #0a387c;
+}
+
+.container .modulos .roxo-escuro{
+    border: 2px solid #4a148c;
+}
+
+.container .modulos .roxo-escuro > h3{
+    background-color: #4a148c;
+}
+
+.container .modulos .roxo-escuro:hover > h3{
+    background-color: #3d1074;
+}
+
+.container .modulos .laranja-escuro{
+    border: 2px solid #E65527;
+}
+
+.container .modulos .laranja-escuro > h3{
+    background-color: #E65527;
+}
+
+.container .modulos .laranja-escuro:hover > h3{
+    background-color: #c73407;
+}
+
+hr{
+    margin-top: 0;
+}
+p.divisao{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* =================================================== */
+
+
+/* Estilando o menu de navegação */
+.navegacao{
+    grid-area: navegacao;
+    background-color: rgb(68, 67, 67);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navegacao > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 5px;
+}
+.navegacao .verde{
+    border: 2px solid #15c41b;
+}
+
+.navegacao .verde{
+    background-color: #15c41b;
+}
+
+.navegacao .verde:hover{
+    background-color: #13b119;
+    border-color: #13b119;
+    color: rgb(233, 233, 233);
+}
+
+.navegacao .vermelho{
+    border: 2px solid #e41203;
+}
+
+.navegacao .vermelho{
+    background-color: #e41203;
+}
+
+.navegacao .vermelho:hover{
+    background-color: #d11002;
+    border-color: #d11002;
+    color: rgb(233, 233, 233);
+}
+
+span.user{
+    flex-grow: 1;
+    justify-self: flex-start;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ======================================= */
+
+.rodape{
+    grid-area: rodape;
+    padding: 1em;
+    font-size: 1rem;
+    color: #444;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

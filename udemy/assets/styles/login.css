@@ -1,0 +1,64 @@
+/* GLOBAL CONFIGURATION */
+body.login{
+    grid-template-rows: 20vh 1fr 6vh;
+    grid-template-areas: "cabecalho" "container" "rodape";
+}
+/* ======================== */
+
+/* Estilizando container principal */
+.container{
+    height: calc(100vh - 26vh);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .conteudo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div.campo{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
+
+input{
+    width: 20vw;
+    padding: 0.25em;
+    font-size: 1rem;
+}
+
+button{
+    margin: 0.5em;
+    width: 20vw;
+    font-size: 1.2rem;
+    padding: 0.25em 1em;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover{
+    background-color: #44a047;
+    color: #fff;
+}
+
+.errors > p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #ff4500;
+    padding: 0.25em 1em;
+    margin: 1em 0;
+}
